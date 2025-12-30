@@ -50,3 +50,6 @@ Thumbs.db
 # Personal data
 my_*.yaml
 private/
+
+# Test output
+downloaded_workout.json

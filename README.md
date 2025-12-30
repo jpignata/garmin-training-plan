@@ -2,6 +2,8 @@
 
 A Python CLI tool to sync marathon training plans from YAML format to Garmin Connect.
 
+> ✨ Vibe coded with [Claude Code](https://claude.com/claude-code)
+
 ## Features
 
 - **Upload Training Plans**: Create structured workouts with pace zones, intervals, warmup/cooldown
@@ -33,7 +35,7 @@ If you have multi-factor authentication enabled on your Garmin account, the scri
 
 ### Upload Entire Plan
 
-Upload all 18 weeks of the training plan:
+Upload all 19 weeks of the training plan (18 training weeks + race week):
 
 ```bash
 python sync_garmin.py upload-all
@@ -76,6 +78,7 @@ plan:
   name: Pfitzinger 18/55
   duration_weeks: 18
   peak_mileage: 55
+  # Note: 18 training weeks + week 19 (race week) = 19 total weeks
 
 paces:
   recovery: '9:15'
@@ -85,7 +88,7 @@ paces:
   vo2max: '6:08'
 
 weeks:
-  - week: 18
+  - week: 1
     block: Endurance
     workouts:
       monday:
@@ -105,6 +108,9 @@ weeks:
             distance: 2
             pace: general_aerobic
       # ... more days
+  - week: 2
+    # ... more weeks
+  # ... up to week 19 (race week)
 ```
 
 ## Workout Conversion
@@ -124,38 +130,24 @@ Converts YAML workout structure to Garmin format with:
 
 ### Pace Targets
 - Converts pace (min:sec per mile) to speed (meters per second)
-- Creates speed targets with ±5% range for flexibility
+- Creates pace targets with ±5% range for flexibility
+- Uses `targetTypeId: 6` with `targetTypeKey: "pace.zone"`
+- Target values (targetValueOne/targetValueTwo) are specified in meters per second at the step level
 
 ## Current Status
 
-### ✅ Implemented
+### ✅ Fully Implemented
 - CLI interface with argument parsing
 - Authentication with Garmin Connect (with MFA support)
 - YAML parsing and validation
 - Date calculation (week numbers → calendar dates)
 - Workout builder with structured workouts
-- Pace zone mapping to speed targets
+- Pace zone mapping to speed targets with ±5% range
 - Upload-all operation (creates and schedules workouts)
-- Update-week operation (re-uploads and schedules specific week)
-- **Workout Scheduling**: Workouts are now automatically scheduled to calendar dates!
-
-### ⚠️ In Progress
-- **Workout Deletion**: Can identify workouts to delete but API endpoint not yet implemented
-
-### 🔧 To Do
-1. **Implement Workout Deletion**
-   - Find the correct API endpoint for deleting workouts from library
-   - May need to use garminconnect internal request methods
-   - Test deletion and re-uploading flow
-
-2. **Add Pace Target Values**
-   - Include `targetValueOne` and `targetValueTwo` in workout steps
-   - Test if Garmin Connect properly displays pace targets
-
-3. **Testing**
-   - Verify workout structure appears correctly in Garmin Connect
-   - Verify workouts appear on calendar with correct dates
-   - Test pace targets display correctly on Garmin devices
+- Delete-all operation (removes all workouts from plan)
+- Update-week operation (re-uploads specific week)
+- **Workout Scheduling**: Workouts automatically scheduled to calendar dates
+- **Pace Targets**: Properly configured to display as pace zones (not heart rate)
 
 ## Technical Details
 
@@ -190,9 +182,11 @@ Workouts use the following JSON structure:
           },
           "endConditionValue": 3218.68,
           "targetType": {
-            "workoutTargetTypeId": 4,
-            "workoutTargetTypeKey": "speed"
-          }
+            "workoutTargetTypeId": 6,
+            "workoutTargetTypeKey": "pace.zone"
+          },
+          "targetValueOne": 3.8,
+          "targetValueTwo": 4.2
         }
         // ... more steps
       ]
@@ -216,31 +210,28 @@ Workouts use the following JSON structure:
 
 ### Target Types
 - 1: No Target
-- 2: Heart Rate
+- 2: Heart Rate Zone
 - 3: Cadence
-- 4: Speed
-- 5: Power
-- 6: Open
+- 4: Heart Rate (custom)
+- 5: Speed (km/h)
+- 6: Pace Zone (min/km or min/mile)
+- 7: Power
 
 ## Research Resources
 
-Based on web research:
-- [GitHub: sydspost/Garmin-Connect-Workout-and-Schedule-creator](https://github.com/sydspost/Garmin-Connect-Workout-and-Schedule-creator)
+Based on web research and reverse engineering:
+- [GitHub: ThomasRondof/GarminWorkoutAItoJSON](https://github.com/ThomasRondof/GarminWorkoutAItoJSON) - Used to discover pace target format
+- [GitHub: mkuthan/garmin-workouts](https://github.com/mkuthan/garmin-workouts) - Command line tool for managing Garmin workouts
+- [GitHub: cyberjunky/python-garminconnect](https://github.com/cyberjunky/python-garminconnect) - Python API wrapper
 - [Garmin Connect Training API](https://developer.garmin.com/gc-developer-program/training-api/)
-- [GitHub: cyberjunky/python-garminconnect](https://github.com/cyberjunky/python-garminconnect)
 
-The recommended approach for understanding Garmin's workout JSON structure is to:
-1. Create a workout manually in Garmin Connect
-2. Export it to JSON format
-3. Examine the structure for scheduling and target fields
+### Key Discoveries
 
-## Contributing
+**Pace Targets**: The correct format for pace targets is `targetTypeId: 6` with `targetTypeKey: "pace.zone"`. Using `targetTypeId: 4` results in Garmin interpreting values as heart rate (BPM) instead of pace.
 
-To implement the missing features:
+**Workout Scheduling**: POST to `/workout-service/schedule/{workout_id}` with `{"date": "YYYY-MM-DD"}`
 
-1. **Scheduling API**: Look for POST endpoints at `{garmin_workouts_schedule_url}` or similar
-2. **Deletion API**: Look for DELETE endpoints for workout library items
-3. **Target Values**: Add `targetValueOne`, `targetValueTwo`, or `zoneNumber` fields to workout steps
+**Workout Deletion**: DELETE to `/workout-service/workout/{workout_id}`
 
 ## License
 
