@@ -18,7 +18,7 @@ paces:
   vo2max: '6:08'
   race_5k: '6:13'
 weeks:
-- week: 18
+- week: 1
   block: Endurance
   weeks_to_goal: 18
   total_mileage: 31-36
@@ -55,7 +55,7 @@ weeks:
       type: medium_long_run
       distance: 11-12
       description: Med-long run 11-12 miles (18-19 km)
-- week: 17
+- week: 2
   block: Endurance
   weeks_to_goal: 17
   total_mileage: 33-38
@@ -94,7 +94,7 @@ weeks:
         cooldown:
           distance: 2-3
           pace: general_aerobic
-- week: 16
+- week: 3
   block: Endurance
   weeks_to_goal: 16
   total_mileage: 33-38
@@ -122,7 +122,7 @@ weeks:
       type: medium_long_run
       distance: 14-15
       description: Med-long run 14-15 miles (23-24 km)
-- week: 15
+- week: 4
   block: Endurance
   weeks_to_goal: 15
   total_mileage: 39-44
@@ -161,7 +161,7 @@ weeks:
       type: long_run
       distance: 15-17
       description: Long run 15-17 miles (24-27 km)
-- week: 14
+- week: 5
   block: Endurance
   weeks_to_goal: 14
   total_mileage: 40-47
@@ -202,7 +202,7 @@ weeks:
         cooldown:
           distance: 2-3
           pace: general_aerobic
-- week: 13
+- week: 6
   block: Endurance
   weeks_to_goal: 13
   total_mileage: 42-48
@@ -241,7 +241,7 @@ weeks:
       type: long_run
       distance: 16-17
       description: Long run 16-17 miles (26-27 km)
-- week: 12
+- week: 7
   block: Endurance (Recovery)
   weeks_to_goal: 12
   total_mileage: 33-40
@@ -270,7 +270,7 @@ weeks:
       type: medium_long_run
       distance: 11-12
       description: Med-long run 11-12 miles (18-19 km)
-- week: 11
+- week: 8
   block: LT + Endurance
   weeks_to_goal: 11
   total_mileage: 40-47
@@ -310,7 +310,7 @@ weeks:
       type: long_run
       distance: 16-17
       description: Long run 16-17 miles (26-27 km)
-- week: 10
+- week: 9
   block: LT + Endurance
   weeks_to_goal: 10
   total_mileage: 40-47
@@ -350,7 +350,7 @@ weeks:
         cooldown:
           distance: 2-3
           pace: general_aerobic
-- week: 9
+- week: 10
   block: LT + Endurance
   weeks_to_goal: 9
   total_mileage: 45-51
@@ -396,7 +396,7 @@ weeks:
       type: long_run
       distance: 18-19
       description: Long run 18-19 miles (29-31 km)
-- week: 8
+- week: 11
   block: LT + Endurance (Recovery)
   weeks_to_goal: 8
   total_mileage: 39-45
@@ -435,7 +435,7 @@ weeks:
       type: long_run
       distance: 13-14
       description: Long run 13-14 miles (21-23 km)
-- week: 7
+- week: 12
   block: LT + Endurance
   weeks_to_goal: 7
   total_mileage: 40-47
@@ -500,7 +500,7 @@ weeks:
       type: medium_long_run
       distance: 13-14
       description: Med-long run 13-14 miles (21-23 km)
-- week: 6
+- week: 13
   block: Race Preparation
   weeks_to_goal: 6
   total_mileage: 49-55
@@ -546,7 +546,7 @@ weeks:
       type: long_run
       distance: 16-17
       description: Long run 16-17 miles (26-27 km)
-- week: 5
+- week: 14
   block: Race Preparation
   weeks_to_goal: 5
   total_mileage: 48-54
@@ -603,7 +603,7 @@ weeks:
         cooldown:
           distance: 1-2
           pace: general_aerobic
-- week: 4
+- week: 15
   block: Race Preparation
   weeks_to_goal: 4
   total_mileage: 49-55
@@ -649,7 +649,7 @@ weeks:
       type: long_run
       distance: 16-17
       description: Long run 16-17 miles (26-27 km)
-- week: 3
+- week: 16
   block: Race Preparation
   weeks_to_goal: 3
   total_mileage: 49-55
@@ -695,7 +695,7 @@ weeks:
       type: long_run
       distance: 19-21
       description: Long run 19-21 miles (31-34 km)
-- week: 2
+- week: 17
   block: Taper
   weeks_to_goal: 2
   total_mileage: 41-48
@@ -725,7 +725,7 @@ weeks:
       type: long_run
       distance: 16-17
       description: Long run 16-17 miles (26-27 km)
-- week: 1
+- week: 18
   block: Taper
   weeks_to_goal: 1
   total_mileage: 31-35
@@ -767,7 +767,7 @@ weeks:
       description: 'Recovery + speed: 5-6 miles (8-10 km) with 6 × 100 m strides'
     sunday:
       type: rest
-- week: 0
+- week: 19
   block: Race Week
   weeks_to_goal: 0
   total_mileage: 12-15
@@ -807,7 +807,7 @@ weeks:
       distance: 26.2
       description: GOAL MARATHON
       notes: 16-21 miles (26-34 km) with 6 days of prerace rest
-- week: -1
+- week: 20
   block: Recovery - Week 1
   weeks_after_marathon: 1
   total_mileage: 12-15
@@ -832,7 +832,7 @@ weeks:
       type: recovery
       distance: 5-6
       description: Recovery 5-6 miles (8-10 km)
-- week: -2
+- week: 21
   block: Recovery - Week 2
   weeks_after_marathon: 2
   total_mileage: 19-23
@@ -857,7 +857,7 @@ weeks:
       type: recovery
       distance: 6-7
       description: Recovery 6-7 miles (10-11 km)
-- week: -3
+- week: 22
   block: Recovery - Week 3
   weeks_after_marathon: 3
   total_mileage: 24-28
@@ -884,7 +884,7 @@ weeks:
       type: general_aerobic
       distance: 8-9
       description: General aerobic 8-9 miles (13-14 km)
-- week: -4
+- week: 23
   block: Recovery - Week 4
   weeks_after_marathon: 4
   total_mileage: 28-32
@@ -911,7 +911,7 @@ weeks:
       type: general_aerobic
       distance: 9-10
       description: General aerobic 9-10 miles (14-16 km)
-- week: -5
+- week: 24
   block: Recovery - Week 5
   weeks_after_marathon: 5
   total_mileage: 33-38
