@@ -1,0 +1,940 @@
+goal_event:
+  name: NYC Marathon 2026
+  date: '2026-11-01'
+  type: marathon
+  distance: 26.2
+  goal_time: '3:05:00'
+plan:
+  name: Pfitzinger 18/55
+  duration_weeks: 18
+  peak_mileage: 55
+  description: 18-week marathon training plan from Advanced Marathoning
+paces:
+  recovery: '9:15'
+  general_aerobic: '8:30'
+  endurance: '8:00'
+  marathon_pace: '7:02'
+  lactate_threshold: '6:40'
+  vo2max: '6:08'
+  race_5k: '6:13'
+weeks:
+- week: 18
+  block: Endurance
+  weeks_to_goal: 18
+  total_mileage: 31-36
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: lactate_threshold
+      distance: 8-9
+      description: 'LT run: 8-9 miles (13-14 km) with 20-25 minutes at LT pace'
+      structure:
+        warmup:
+          distance: 2
+          pace: general_aerobic
+        main:
+          duration: 20-25 min
+          pace: lactate_threshold
+        cooldown:
+          distance: 2
+          pace: general_aerobic
+    wednesday:
+      type: rest
+    thursday:
+      type: general_aerobic
+      distance: 8-10
+      description: General aerobic 8-10 miles (13-16 km)
+    friday:
+      type: rest
+    saturday:
+      type: recovery
+      distance: 4-5
+      description: Recovery 4-5 miles (6-8 km)
+    sunday:
+      type: medium_long_run
+      distance: 11-12
+      description: Med-long run 11-12 miles (18-19 km)
+- week: 17
+  block: Endurance
+  weeks_to_goal: 17
+  total_mileage: 33-38
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: general_aerobic_speed
+      distance: 8-9
+      description: 'Gen-aerobic + speed: 8-9 miles (13-14 km) with 6 × 10 sec hill
+        sprints + 8 × 100 m strides'
+    wednesday:
+      type: rest
+    thursday:
+      type: general_aerobic
+      distance: 9-10
+      description: General aerobic 9-10 miles (14-16 km)
+    friday:
+      type: rest
+    saturday:
+      type: recovery
+      distance: 4-5
+      description: Recovery 4-5 miles (6-8 km)
+    sunday:
+      type: marathon_pace_run
+      distance: 12-14
+      description: 'Marathon-pace run: 12-14 miles (19-23 km) with 8 miles (13 km)
+        at marathon pace'
+      structure:
+        warmup:
+          distance: 2-3
+          pace: general_aerobic
+        main:
+          distance: 8
+          pace: marathon_pace
+        cooldown:
+          distance: 2-3
+          pace: general_aerobic
+- week: 16
+  block: Endurance
+  weeks_to_goal: 16
+  total_mileage: 33-38
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: general_aerobic_speed
+      distance: 8-9
+      description: 'Gen-aerobic + speed: 8-9 miles (13-14 km) with 6 × 10 sec hill
+        sprints + 8 × 100 m strides'
+    wednesday:
+      type: rest
+    thursday:
+      type: general_aerobic
+      distance: 9-10
+      description: General aerobic 9-10 miles (14-16 km)
+    friday:
+      type: rest
+    saturday:
+      type: recovery
+      distance: 4-5
+      description: Recovery 4-5 miles (6-8 km)
+    sunday:
+      type: medium_long_run
+      distance: 14-15
+      description: Med-long run 14-15 miles (23-24 km)
+- week: 15
+  block: Endurance
+  weeks_to_goal: 15
+  total_mileage: 39-44
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: general_aerobic
+      distance: 9-10
+      description: General aerobic 9-10 miles (14-16 km)
+    wednesday:
+      type: recovery
+      distance: 4-5
+      description: Recovery 4-5 miles (6-8 km)
+    thursday:
+      type: lactate_threshold
+      distance: 8-9
+      description: 'LT run: 8-9 miles (13-14 km) with 25-30 minutes at LT pace'
+      structure:
+        warmup:
+          distance: 2
+          pace: general_aerobic
+        main:
+          duration: 25-30 min
+          pace: lactate_threshold
+        cooldown:
+          distance: 2
+          pace: general_aerobic
+    friday:
+      type: rest
+    saturday:
+      type: recovery
+      distance: 4-5
+      description: Recovery 4-5 miles (6-8 km)
+    sunday:
+      type: long_run
+      distance: 15-17
+      description: Long run 15-17 miles (24-27 km)
+- week: 14
+  block: Endurance
+  weeks_to_goal: 14
+  total_mileage: 40-47
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: general_aerobic_speed
+      distance: 8-9
+      description: 'Gen-aerobic + speed: 8-9 miles (13-14 km) with 6 × 10 sec hill
+        sprints + 8 × 100 m strides'
+    wednesday:
+      type: recovery
+      distance: 4-6
+      description: Recovery 4-6 miles (6-10 km)
+    thursday:
+      type: general_aerobic
+      distance: 9-10
+      description: General aerobic 9-10 miles (14-16 km)
+    friday:
+      type: rest
+    saturday:
+      type: recovery
+      distance: 4-5
+      description: Recovery 4-5 miles (6-8 km)
+    sunday:
+      type: marathon_pace_run
+      distance: 15-17
+      description: 'Marathon-pace run: 15-17 miles (24-27 km) with 10 miles (16 km)
+        at marathon pace'
+      structure:
+        warmup:
+          distance: 3-4
+          pace: general_aerobic
+        main:
+          distance: 10
+          pace: marathon_pace
+        cooldown:
+          distance: 2-3
+          pace: general_aerobic
+- week: 13
+  block: Endurance
+  weeks_to_goal: 13
+  total_mileage: 42-48
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: lactate_threshold
+      distance: 9-10
+      description: 'LT run: 9-10 miles (14-16 km) with 30-35 minutes at LT pace'
+      structure:
+        warmup:
+          distance: 2-3
+          pace: general_aerobic
+        main:
+          duration: 30-35 min
+          pace: lactate_threshold
+        cooldown:
+          distance: 2-3
+          pace: general_aerobic
+    wednesday:
+      type: recovery
+      distance: 5-6
+      description: Recovery 5-6 miles (8-10 km)
+    thursday:
+      type: general_aerobic
+      distance: 9-10
+      description: General aerobic 9-10 miles (14-16 km)
+    friday:
+      type: rest
+    saturday:
+      type: recovery
+      distance: 4-5
+      description: Recovery 4-5 miles (6-8 km)
+    sunday:
+      type: long_run
+      distance: 16-17
+      description: Long run 16-17 miles (26-27 km)
+- week: 12
+  block: Endurance (Recovery)
+  weeks_to_goal: 12
+  total_mileage: 33-40
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: general_aerobic_speed
+      distance: 7-8
+      description: 'Gen-aerobic + speed: 7-8 miles (11-13 km) with 10 × 100 m strides'
+    wednesday:
+      type: recovery
+      distance: 4-5
+      description: Recovery 4-5 miles (6-10 km)
+    thursday:
+      type: general_aerobic
+      distance: 7-9
+      description: General aerobic 7-9 miles (11-14 km)
+    friday:
+      type: rest
+    saturday:
+      type: recovery
+      distance: 4-5
+      description: Recovery 4-5 miles (6-8 km)
+    sunday:
+      type: medium_long_run
+      distance: 11-12
+      description: Med-long run 11-12 miles (18-19 km)
+- week: 11
+  block: LT + Endurance
+  weeks_to_goal: 11
+  total_mileage: 40-47
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: lactate_threshold
+      distance: 9-10
+      description: 'LT run: 9-10 miles (14-16 km) with 30-35 minutes at LT pace'
+      structure:
+        warmup:
+          distance: 2-3
+          pace: general_aerobic
+        main:
+          duration: 30-35 min
+          pace: lactate_threshold
+        cooldown:
+          distance: 2-3
+          pace: general_aerobic
+    wednesday:
+      type: recovery
+      distance: 4-5
+      description: Recovery 4-5 miles (6-8 km)
+    thursday:
+      type: medium_long_run
+      distance: 11-12
+      description: Med-long run 11-12 miles (18-19 km)
+    friday:
+      type: rest
+    saturday:
+      type: general_aerobic_speed
+      distance: 6-7
+      description: 'Gen-aerobic + speed: 6-7 miles (10-11 km) with 6 × 10 sec hill
+        sprints + 8 × 100 m strides'
+    sunday:
+      type: long_run
+      distance: 16-17
+      description: Long run 16-17 miles (26-27 km)
+- week: 10
+  block: LT + Endurance
+  weeks_to_goal: 10
+  total_mileage: 40-47
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: recovery_speed
+      distance: 6-7
+      description: 'Recovery + speed: 6-7 miles (10-11 km) with 6 × 100 m strides'
+    wednesday:
+      type: recovery
+      distance: 6-7
+      description: Recovery 6-7 miles (10-11 km)
+    thursday:
+      type: medium_long_run
+      distance: 13-14
+      description: Med-long run 13-14 miles (21-23 km)
+    friday:
+      type: rest
+    saturday:
+      type: recovery
+      distance: 4-5
+      description: Recovery 4-5 miles (6-8 km)
+    sunday:
+      type: marathon_pace_run
+      distance: 16-17
+      description: 'Marathon-pace run: 16-17 miles (26-27 km) with 12 miles (19 km)
+        at marathon pace'
+      structure:
+        warmup:
+          distance: 2
+          pace: general_aerobic
+        main:
+          distance: 12
+          pace: marathon_pace
+        cooldown:
+          distance: 2-3
+          pace: general_aerobic
+- week: 9
+  block: LT + Endurance
+  weeks_to_goal: 9
+  total_mileage: 45-51
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: vo2max
+      distance: 8-9
+      description: 'VO2 max: 8-9 miles (13-14 km) with 5 × 600 m at 5K race pace;
+        jog 50%-90% interval time'
+      structure:
+        warmup:
+          distance: 2-3
+          pace: general_aerobic
+        intervals:
+          repeat: 5
+          work:
+            distance: 600
+            pace: vo2max
+            unit: meters
+          rest:
+            type: jog
+            duration: 50-90% of work interval time
+        cooldown:
+          distance: 2-3
+          pace: general_aerobic
+    wednesday:
+      type: recovery
+      distance: 6-7
+      description: Recovery 6-7 miles (10-11 km)
+    thursday:
+      type: recovery_speed
+      distance: 5-6
+      description: 'Recovery + speed: 5-6 miles (8-10 km) with 6 × 100 m strides'
+    friday:
+      type: rest
+    saturday:
+      type: recovery
+      distance: 6-7
+      description: Recovery 6-7 miles (10-11 km)
+    sunday:
+      type: long_run
+      distance: 18-19
+      description: Long run 18-19 miles (29-31 km)
+- week: 8
+  block: LT + Endurance (Recovery)
+  weeks_to_goal: 8
+  total_mileage: 39-45
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: lactate_threshold
+      distance: 10-11
+      description: 'LT run: 10-11 miles (16-18 km) with 35-40 minutes at LT pace'
+      structure:
+        warmup:
+          distance: 2-3
+          pace: general_aerobic
+        main:
+          duration: 35-40 min
+          pace: lactate_threshold
+        cooldown:
+          distance: 3
+          pace: general_aerobic
+    wednesday:
+      type: recovery
+      distance: 4-5
+      description: Recovery 4-5 miles (6-8 km)
+    thursday:
+      type: recovery
+      distance: 6-8
+      description: Recovery 6-8 miles (10-13 km)
+    friday:
+      type: rest
+    saturday:
+      type: recovery
+      distance: 4-5
+      description: Recovery 4-5 miles (6-8 km)
+    sunday:
+      type: long_run
+      distance: 13-14
+      description: Long run 13-14 miles (21-23 km)
+- week: 7
+  block: LT + Endurance
+  weeks_to_goal: 7
+  total_mileage: 40-47
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: general_aerobic
+      distance: 8-9
+      description: General aerobic 8-9 miles (13-14 km)
+    wednesday:
+      type: vo2max
+      distance: 8-9
+      description: 'VO2 max: 8-9 miles (13-14 km) with 6 × 800 m at 5K race pace;
+        jog 50%-90% interval time'
+      structure:
+        warmup:
+          distance: 2-3
+          pace: general_aerobic
+        intervals:
+          repeat: 6
+          work:
+            distance: 800
+            pace: vo2max
+            unit: meters
+          rest:
+            type: jog
+            duration: 50-90% of work interval time
+        cooldown:
+          distance: 2-3
+          pace: general_aerobic
+    thursday:
+      type: recovery
+      distance: 4-5
+      description: Recovery 4-5 miles (6-8 km)
+    friday:
+      type: recovery_speed
+      distance: 7-8
+      description: 'Recovery + speed: 7-8 miles (11-13 km) with 6 × 10 sec hill sprints
+        + 8 × 100 m strides'
+      structure:
+        warmup:
+          distance: 2
+          pace: recovery
+        main:
+        - type: hill_sprints
+          repeat: 6
+          duration: 10 sec
+          recovery: walk back down
+        - type: strides
+          repeat: 8
+          distance: 100
+          recovery: easy jog
+        cooldown:
+          distance: 2
+          pace: recovery
+    saturday:
+      type: recovery
+      distance: 4-5
+      description: Recovery 4-5 miles (6-8 km)
+    sunday:
+      type: medium_long_run
+      distance: 13-14
+      description: Med-long run 13-14 miles (21-23 km)
+- week: 6
+  block: Race Preparation
+  weeks_to_goal: 6
+  total_mileage: 49-55
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: general_aerobic
+      distance: 10-11
+      description: General aerobic 10-11 miles (16-18 km)
+    wednesday:
+      type: vo2max
+      distance: 8-9
+      description: 'VO2 max: 8-9 miles (13-14 km) with 5 × 600 m at 5K race pace;
+        jog 50%-90% interval time'
+      structure:
+        warmup:
+          distance: 2-3
+          pace: general_aerobic
+        intervals:
+          repeat: 5
+          work:
+            distance: 600
+            pace: vo2max
+            unit: meters
+          rest:
+            type: jog
+            duration: 50-90% of work interval time
+        cooldown:
+          distance: 2-3
+          pace: general_aerobic
+    thursday:
+      type: rest
+    friday:
+      type: recovery_speed
+      distance: 4-5
+      description: 'Recovery + speed: 4-5 miles (6-8 km) with 6 × 100 m strides'
+    saturday:
+      type: tune_up_race
+      distance: 10-13
+      description: 5K-15K tune-up race (total 10-13 miles [16-21 km])
+    sunday:
+      type: long_run
+      distance: 16-17
+      description: Long run 16-17 miles (26-27 km)
+- week: 5
+  block: Race Preparation
+  weeks_to_goal: 5
+  total_mileage: 48-54
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: recovery
+      distance: 6-7
+      description: Recovery 6-7 miles (10-11 km)
+    wednesday:
+      type: vo2max
+      distance: 9-11
+      description: 'VO2 max: 9-11 miles (14-18 km) with 5 × 1 km at 5K race pace;
+        jog 50%-90% interval time'
+      structure:
+        warmup:
+          distance: 2-3
+          pace: general_aerobic
+        intervals:
+          repeat: 5
+          work:
+            distance: 1000
+            pace: vo2max
+            unit: meters
+          rest:
+            type: jog
+            duration: 50-90% of work interval time
+        cooldown:
+          distance: 3
+          pace: general_aerobic
+    thursday:
+      type: rest
+    friday:
+      type: medium_long_run
+      distance: 11-12
+      description: Med-long run 11-12 miles (18-19 km)
+    saturday:
+      type: recovery
+      distance: 5-6
+      description: Recovery 5-6 miles (8-10 km)
+    sunday:
+      type: marathon_pace_run
+      distance: 17-18
+      description: 'Marathon-pace run: 17-18 miles (27-29 km) with 14 miles (23 km)
+        at marathon pace'
+      structure:
+        warmup:
+          distance: 2
+          pace: general_aerobic
+        main:
+          distance: 14
+          pace: marathon_pace
+        cooldown:
+          distance: 1-2
+          pace: general_aerobic
+- week: 4
+  block: Race Preparation
+  weeks_to_goal: 4
+  total_mileage: 49-55
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: general_aerobic
+      distance: 10-11
+      description: General aerobic 10-11 miles (16-18 km)
+    wednesday:
+      type: vo2max
+      distance: 8-9
+      description: 'VO2 max: 8-9 miles (13-14 km) with 5 × 600 m at 5K race pace;
+        jog 50%-90% interval time'
+      structure:
+        warmup:
+          distance: 2-3
+          pace: general_aerobic
+        intervals:
+          repeat: 5
+          work:
+            distance: 600
+            pace: vo2max
+            unit: meters
+          rest:
+            type: jog
+            duration: 50-90% of work interval time
+        cooldown:
+          distance: 2-3
+          pace: general_aerobic
+    thursday:
+      type: rest
+    friday:
+      type: recovery_speed
+      distance: 4-5
+      description: 'Recovery + speed: 4-5 miles (6-8 km) with 6 × 100 m strides'
+    saturday:
+      type: tune_up_race
+      distance: 10-13
+      description: 8K-15K tune-up race (total 10-13 miles [16-21 km])
+    sunday:
+      type: long_run
+      distance: 16-17
+      description: Long run 16-17 miles (26-27 km)
+- week: 3
+  block: Race Preparation
+  weeks_to_goal: 3
+  total_mileage: 49-55
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: recovery_speed
+      distance: 6-7
+      description: 'Recovery + speed: 6-7 miles (10-11 km) with 6 × 100 m strides'
+    wednesday:
+      type: vo2max
+      distance: 9-10
+      description: 'VO2 max: 9-10 miles (14-16 km) with 5 × 1 km at 5K race pace;
+        jog 50%-90% interval time'
+      structure:
+        warmup:
+          distance: 2-3
+          pace: general_aerobic
+        intervals:
+          repeat: 5
+          work:
+            distance: 1000
+            pace: vo2max
+            unit: meters
+          rest:
+            type: jog
+            duration: 50-90% of work interval time
+        cooldown:
+          distance: 3
+          pace: general_aerobic
+    thursday:
+      type: rest
+    friday:
+      type: medium_long_run
+      distance: 11-12
+      description: Med-long run 11-12 miles (18-19 km)
+    saturday:
+      type: recovery
+      distance: 4-5
+      description: Recovery 4-5 miles (6-8 km)
+    sunday:
+      type: long_run
+      distance: 19-21
+      description: Long run 19-21 miles (31-34 km)
+- week: 2
+  block: Taper
+  weeks_to_goal: 2
+  total_mileage: 41-48
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: general_aerobic_speed
+      distance: 7-8
+      description: 'Gen-aerobic + speed: 7-8 miles (11-13 km) with 6 × 10 sec hill
+        sprints + 10 × 100 m strides'
+    wednesday:
+      type: recovery
+      distance: 5-6
+      description: Recovery 5-6 miles (8-10 km)
+    thursday:
+      type: rest
+    friday:
+      type: recovery_speed
+      distance: 4-5
+      description: 'Recovery + speed: 4-5 miles (6-8 km) with 6 × 100 m strides'
+    saturday:
+      type: tune_up_race
+      distance: 9-12
+      description: 8K-10K tune-up race (total 9-12 miles [14-19 km])
+    sunday:
+      type: long_run
+      distance: 16-17
+      description: Long run 16-17 miles (26-27 km)
+- week: 1
+  block: Taper
+  weeks_to_goal: 1
+  total_mileage: 31-35
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: rest
+    wednesday:
+      type: recovery_speed
+      distance: 6-7
+      description: 'Recovery + speed: 6-7 miles (10-11 km) with 8 × 100 m strides'
+    thursday:
+      type: vo2max
+      distance: 8-9
+      description: 'VO2 max: 8-9 miles (13-14 km) with 5 × 1 km at 5K race pace; jog
+        50%-90% interval time'
+      structure:
+        warmup:
+          distance: 2-3
+          pace: general_aerobic
+        intervals:
+          repeat: 5
+          work:
+            distance: 1000
+            pace: vo2max
+            unit: meters
+          rest:
+            type: jog
+            duration: 50-90% of work interval time
+        cooldown:
+          distance: 2-3
+          pace: general_aerobic
+    friday:
+      type: rest
+    saturday:
+      type: recovery_speed
+      distance: 5-6
+      description: 'Recovery + speed: 5-6 miles (8-10 km) with 6 × 100 m strides'
+    sunday:
+      type: rest
+- week: 0
+  block: Race Week
+  weeks_to_goal: 0
+  total_mileage: 12-15
+  description: MARATHON WEEK!
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: rest
+    wednesday:
+      type: recovery
+      distance: 5-6
+      description: Recovery 5-6 miles (8-10 km)
+    thursday:
+      type: dress_rehearsal
+      distance: 5-6
+      description: 'Dress rehearsal: 5-6 miles (8-10 km) with 2 miles (3 km) at marathon
+        pace'
+      structure:
+        warmup:
+          distance: 2-3
+          pace: recovery
+        main:
+          distance: 2
+          pace: marathon_pace
+        cooldown:
+          distance: 1
+          pace: recovery
+    friday:
+      type: rest
+    saturday:
+      type: recovery_speed
+      distance: 4-5
+      description: 'Recovery + speed: 4-5 miles (6-8 km) with 6 × 100 m strides'
+    sunday:
+      type: race
+      distance: 26.2
+      description: GOAL MARATHON
+      notes: 16-21 miles (26-34 km) with 6 days of prerace rest
+- week: -1
+  block: Recovery - Week 1
+  weeks_after_marathon: 1
+  total_mileage: 12-15
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: rest
+    wednesday:
+      type: recovery
+      distance: 3-4
+      description: Recovery 3-4 miles (5-6 km)
+    thursday:
+      type: rest
+    friday:
+      type: recovery
+      distance: 4-5
+      description: Recovery 4-5 miles (6-8 km)
+    saturday:
+      type: rest
+    sunday:
+      type: recovery
+      distance: 5-6
+      description: Recovery 5-6 miles (8-10 km)
+- week: -2
+  block: Recovery - Week 2
+  weeks_after_marathon: 2
+  total_mileage: 19-23
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: rest
+    wednesday:
+      type: recovery
+      distance: 4-5
+      description: Recovery 4-5 miles (6-8 km)
+    thursday:
+      type: rest
+    friday:
+      type: recovery
+      distance: 5-6
+      description: Recovery 5-6 miles (8-10 km)
+    saturday:
+      type: rest
+    sunday:
+      type: recovery
+      distance: 6-7
+      description: Recovery 6-7 miles (10-11 km)
+- week: -3
+  block: Recovery - Week 3
+  weeks_after_marathon: 3
+  total_mileage: 24-28
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: recovery
+      distance: 5-6
+      description: Recovery 5-6 miles (8-10 km)
+    wednesday:
+      type: recovery
+      distance: 4-5
+      description: Recovery 4-5 miles (6-8 km)
+    thursday:
+      type: rest
+    friday:
+      type: general_aerobic_speed
+      distance: 7-8
+      description: 'Gen-aerobic + speed: 7-8 miles (11-13 km) with 8 × 100 m strides'
+    saturday:
+      type: rest
+    sunday:
+      type: general_aerobic
+      distance: 8-9
+      description: General aerobic 8-9 miles (13-14 km)
+- week: -4
+  block: Recovery - Week 4
+  weeks_after_marathon: 4
+  total_mileage: 28-32
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: general_aerobic
+      distance: 7-8
+      description: General aerobic 7-8 miles (11-13 km)
+    wednesday:
+      type: recovery
+      distance: 5-6
+      description: Recovery 5-6 miles (8-10 km)
+    thursday:
+      type: rest
+    friday:
+      type: general_aerobic_speed
+      distance: 7-8
+      description: 'Gen-aerobic + speed: 7-8 miles (11-13 km) with 8 × 100 m strides'
+    saturday:
+      type: rest
+    sunday:
+      type: general_aerobic
+      distance: 9-10
+      description: General aerobic 9-10 miles (14-16 km)
+- week: -5
+  block: Recovery - Week 5
+  weeks_after_marathon: 5
+  total_mileage: 33-38
+  workouts:
+    monday:
+      type: rest
+    tuesday:
+      type: general_aerobic
+      distance: 7-8
+      description: General aerobic 7-8 miles (11-13 km)
+    wednesday:
+      type: recovery
+      distance: 4-5
+      description: Recovery 4-5 miles (6-8 km)
+    thursday:
+      type: rest
+    friday:
+      type: general_aerobic_speed
+      distance: 7-8
+      description: 'Gen-aerobic + speed: 7-8 miles (11-13 km) with 8 × 100 m strides'
+    saturday:
+      type: rest
+    sunday:
+      type: medium_long_run
+      distance: 11-12
+      description: Med-long run 11-12 miles (18-19 km)
