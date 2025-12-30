@@ -366,7 +366,7 @@ class WorkoutBuilder:
                     end_condition_id=2,  # TIME
                     end_condition_key="time",
                     end_condition_value=rest_duration,
-                    target_type=self.get_target_speed_zone('recovery')
+                    target_type=self.get_no_target()  # No pace target for recovery jogs
                 ))
 
             # Create repeat group
