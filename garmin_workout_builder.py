@@ -316,27 +316,49 @@ class WorkoutBuilder:
 
             # Work interval
             work = intervals.get('work', {})
-            work_distance_meters = work.get('distance', 600)
-            if work.get('unit') == 'meters':
-                work_distance_meters = work_distance_meters
-            else:
-                work_distance_meters = work_distance_meters * 1609.34
 
-            repeat_steps.append(self.create_executable_step(
-                step_order=1,
-                step_type_id=3,  # INTERVAL
-                step_type_key="interval",
-                end_condition_id=3,  # DISTANCE
-                end_condition_key="distance",
-                end_condition_value=work_distance_meters,
-                target_type=self.get_target_speed_zone(work.get('pace', 'vo2max'))
-            ))
+            # Check if work interval is time-based or distance-based
+            if 'duration' in work:
+                # Time-based work interval (e.g., LT intervals)
+                duration_str = work['duration']
+                duration_secs = self.parse_duration(duration_str)
+
+                repeat_steps.append(self.create_executable_step(
+                    step_order=1,
+                    step_type_id=3,  # INTERVAL
+                    step_type_key="interval",
+                    end_condition_id=2,  # TIME
+                    end_condition_key="time",
+                    end_condition_value=duration_secs,
+                    target_type=self.get_target_speed_zone(work.get('pace', 'lactate_threshold'))
+                ))
+            else:
+                # Distance-based work interval (e.g., VO2max intervals)
+                work_distance_meters = work.get('distance', 600)
+                if work.get('unit') == 'meters':
+                    work_distance_meters = work_distance_meters
+                else:
+                    work_distance_meters = work_distance_meters * 1609.34
+
+                repeat_steps.append(self.create_executable_step(
+                    step_order=1,
+                    step_type_id=3,  # INTERVAL
+                    step_type_key="interval",
+                    end_condition_id=3,  # DISTANCE
+                    end_condition_key="distance",
+                    end_condition_value=work_distance_meters,
+                    target_type=self.get_target_speed_zone(work.get('pace', 'vo2max'))
+                ))
 
             # Rest interval
             rest = intervals.get('rest', {})
             if rest.get('type') == 'jog':
-                # Use time-based recovery (estimate 2-3 minutes)
-                rest_duration = 150  # seconds
+                # Parse rest duration if provided, otherwise use default
+                if 'duration' in rest:
+                    rest_duration = self.parse_duration(rest['duration'])
+                else:
+                    rest_duration = 150  # default 2.5 minutes
+
                 repeat_steps.append(self.create_executable_step(
                     step_order=2,
                     step_type_id=4,  # RECOVERY

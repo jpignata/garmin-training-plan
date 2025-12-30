@@ -1,0 +1,125 @@
+# Example LT Workout Updates
+
+# Week 1 - Tuesday (20-25 min LT)
+# OLD:
+tuesday:
+  type: lactate_threshold
+  distance: 8-9
+  description: 'LT run: 8-9 miles (13-14 km) with 20-25 minutes at LT pace'
+  structure:
+    warmup:
+      distance: 2
+      pace: general_aerobic
+    main:
+      duration: "20-25 min"
+      pace: lactate_threshold
+    cooldown:
+      distance: 2
+      pace: general_aerobic
+
+# NEW:
+tuesday:
+  type: lactate_threshold
+  distance: 8-9
+  description: 'LT run: 8-9 miles with 3 × 8 min @ LT pace (3-min jog recovery)'
+  structure:
+    warmup:
+      distance: 2
+      pace: general_aerobic
+    intervals:
+      - duration: "8 min"
+        pace: lactate_threshold
+      - duration: "3 min"
+        pace: recovery
+        type: jog
+      - duration: "8 min"
+        pace: lactate_threshold
+      - duration: "3 min"
+        pace: recovery
+        type: jog
+      - duration: "8 min"
+        pace: lactate_threshold
+    cooldown:
+      distance: 2
+      pace: general_aerobic
+
+# Week 4 - Thursday (25-30 min LT)
+# NEW:
+thursday:
+  type: lactate_threshold
+  distance: 8-9
+  description: 'LT run: 8-9 miles with 3 × 9 min @ LT pace (3-min jog recovery)'
+  structure:
+    warmup:
+      distance: 2
+      pace: general_aerobic
+    intervals:
+      - duration: "9 min"
+        pace: lactate_threshold
+      - duration: "3 min"
+        pace: recovery
+        type: jog
+      - duration: "9 min"
+        pace: lactate_threshold
+      - duration: "3 min"
+        pace: recovery
+        type: jog
+      - duration: "9 min"
+        pace: lactate_threshold
+    cooldown:
+      distance: 2
+      pace: general_aerobic
+
+# Week 6 - Tuesday (30-35 min LT)
+# NEW:
+tuesday:
+  type: lactate_threshold
+  distance: 9-10
+  description: 'LT run: 9-10 miles with 3 × 11 min @ LT pace (3-min jog recovery)'
+  structure:
+    warmup:
+      distance: 2-3
+      pace: general_aerobic
+    intervals:
+      - duration: "11 min"
+        pace: lactate_threshold
+      - duration: "3 min"
+        pace: recovery
+        type: jog
+      - duration: "11 min"
+        pace: lactate_threshold
+      - duration: "3 min"
+        pace: recovery
+        type: jog
+      - duration: "11 min"
+        pace: lactate_threshold
+    cooldown:
+      distance: 2-3
+      pace: general_aerobic
+
+# Week 11 - Tuesday (35-40 min LT)
+# NEW:
+tuesday:
+  type: lactate_threshold
+  distance: 10-11
+  description: 'LT run: 10-11 miles with 3 × 12 min @ LT pace (4-min jog recovery)'
+  structure:
+    warmup:
+      distance: 2-3
+      pace: general_aerobic
+    intervals:
+      - duration: "12 min"
+        pace: lactate_threshold
+      - duration: "4 min"
+        pace: recovery
+        type: jog
+      - duration: "12 min"
+        pace: lactate_threshold
+      - duration: "4 min"
+        pace: recovery
+        type: jog
+      - duration: "12 min"
+        pace: lactate_threshold
+    cooldown:
+      distance: 3
+      pace: general_aerobic

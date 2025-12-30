@@ -28,14 +28,19 @@ weeks:
     tuesday:
       type: lactate_threshold
       distance: 8-9
-      description: 'LT run: 8-9 miles (13-14 km) with 20-25 minutes at LT pace'
+      description: 'LT run: 8-9 miles (13-14 km) with 3 × 8 min at LT pace'
       structure:
         warmup:
           distance: 2
           pace: general_aerobic
-        main:
-          duration: 20-25 min
-          pace: lactate_threshold
+        intervals:
+          repeat: 3
+          work:
+            duration: 8 min
+            pace: lactate_threshold
+          rest:
+            type: jog
+            duration: 3 min
         cooldown:
           distance: 2
           pace: general_aerobic
@@ -140,14 +145,19 @@ weeks:
     thursday:
       type: lactate_threshold
       distance: 8-9
-      description: 'LT run: 8-9 miles (13-14 km) with 25-30 minutes at LT pace'
+      description: 'LT run: 8-9 miles (13-14 km) with 3 × 9 min at LT pace'
       structure:
         warmup:
           distance: 2
           pace: general_aerobic
-        main:
-          duration: 25-30 min
-          pace: lactate_threshold
+        intervals:
+          repeat: 3
+          work:
+            duration: 9 min
+            pace: lactate_threshold
+          rest:
+            type: jog
+            duration: 3 min
         cooldown:
           distance: 2
           pace: general_aerobic
@@ -212,14 +222,19 @@ weeks:
     tuesday:
       type: lactate_threshold
       distance: 9-10
-      description: 'LT run: 9-10 miles (14-16 km) with 30-35 minutes at LT pace'
+      description: 'LT run: 9-10 miles (14-16 km) with 3 × 11 min at LT pace'
       structure:
         warmup:
           distance: 2-3
           pace: general_aerobic
-        main:
-          duration: 30-35 min
-          pace: lactate_threshold
+        intervals:
+          repeat: 3
+          work:
+            duration: 11 min
+            pace: lactate_threshold
+          rest:
+            type: jog
+            duration: 3 min
         cooldown:
           distance: 2-3
           pace: general_aerobic
@@ -280,14 +295,19 @@ weeks:
     tuesday:
       type: lactate_threshold
       distance: 9-10
-      description: 'LT run: 9-10 miles (14-16 km) with 30-35 minutes at LT pace'
+      description: 'LT run: 9-10 miles (14-16 km) with 3 × 11 min at LT pace'
       structure:
         warmup:
           distance: 2-3
           pace: general_aerobic
-        main:
-          duration: 30-35 min
-          pace: lactate_threshold
+        intervals:
+          repeat: 3
+          work:
+            duration: 11 min
+            pace: lactate_threshold
+          rest:
+            type: jog
+            duration: 3 min
         cooldown:
           distance: 2-3
           pace: general_aerobic
@@ -406,14 +426,19 @@ weeks:
     tuesday:
       type: lactate_threshold
       distance: 10-11
-      description: 'LT run: 10-11 miles (16-18 km) with 35-40 minutes at LT pace'
+      description: 'LT run: 10-11 miles (16-18 km) with 3 × 12 min at LT pace'
       structure:
         warmup:
           distance: 2-3
           pace: general_aerobic
-        main:
-          duration: 35-40 min
-          pace: lactate_threshold
+        intervals:
+          repeat: 3
+          work:
+            duration: 12 min
+            pace: lactate_threshold
+          rest:
+            type: jog
+            duration: 4 min
         cooldown:
           distance: 3
           pace: general_aerobic
