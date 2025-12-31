@@ -53,3 +53,7 @@ private/
 
 # Test output
 downloaded_workout.json
+
+# Training log exports
+training_log*.md
+training_log*.json
